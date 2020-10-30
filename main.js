@@ -1,3 +1,4 @@
+/* global data */
 
 var $entryButton = document.querySelector('.entry-button');
 var $mainScreen = document.querySelector('.container');

@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Chivo&family=Overpass:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
+  <div class="container hidden">
     <div class="row justify-content-center">
       <h1>Weekly Planner</h1>
     </div>
@@ -21,12 +21,12 @@
     <div class="column-full">TBD</div>
   </div>
 
-  <div class="hidden-container hidden">
+  <div class="hidden-container">
     <div class="modal">
       <form>
         <h1 class="fontChivo add-entry-header">Add Entry</h1>
         <div class="row margin-bottom">
-          <select name="day-of-week" id="" class="margin-right fontChivo" required>
+          <select name="day-of-week" class="margin-right fontChivo" required>
             <option value="">Day of Week</option>
             <option value="sunday">Sunday</option>
             <option value="monday">Monday</option>
@@ -37,11 +37,11 @@
             <option value="saturday">Saturday</option>
           </select>
           <label>
-            <input type="time" id="time" min="00:00" max="24:00" required>
+            <input type="time" id="time" name="time" min="00:00" max="24:00" value="00:00" required>
           </label>
         </div>
         <div class="row">
-          <textarea class="textareaWidth margin-bottom fontOverpass" name="" id="description" cols="30" rows="10" placeholder="Description"></textarea>
+          <textarea class="textareaWidth margin-bottom fontOverpass" name="description" id="description" cols="30" rows="10" placeholder="Description"></textarea>
         </div>
         <div class="row rowFlexEnd">
           <button class="submit-entry-button">Submit</button>
