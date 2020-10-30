@@ -23,6 +23,8 @@ $form.addEventListener('submit', function (e) {
   data.entries.task = $form.elements.description.value;
   // console.log(data.entries.task);
   data.storage.push(data.entries);
+
+  $form.reset();
 });
 
 var previousDataJson = localStorage.getItem('week-planner');

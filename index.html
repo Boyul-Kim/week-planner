@@ -8,12 +8,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Chivo&family=Overpass:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container hidden">
+  <div class="container">
     <div class="row justify-content-center">
       <h1>Weekly Planner</h1>
     </div>
     <div class="row justify-content-center">
-      <div class="column-eigth">TBD</div>
+      <div class="column-eigth">
+        <button id="Sunday" class="day-buttons">Sunday</button>
+        <button id="Monday" class="day-buttons">Monday</button>
+        <button id="Tuesday" class="day-buttons">Tuesday</button>
+        <button id="Wednesday" class="day-buttons">Wednesday</button>
+        <button id="Thursday" class="day-buttons">Thursday</button>
+        <button id="Friday" class="day-buttons">Friday</button>
+        <button id="Saturday" class="day-buttons">Saturday</button>
+      </div>
     </div>
     <div class="column-full justify-content-center">
       <button class="entry-button">Add Entry</button>
@@ -21,7 +29,7 @@
     <div class="column-full">TBD</div>
   </div>
 
-  <div class="hidden-container">
+  <div class="hidden-container hidden">
     <div class="modal">
       <form>
         <h1 class="fontChivo add-entry-header">Add Entry</h1>
