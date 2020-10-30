@@ -11,10 +11,8 @@ $entryButton.addEventListener('click', function (e) {
   $addEntryModal.className = 'hidden-container';
 });
 
-var $submitEntryButton = document.querySelector('.submit-entry-button');
-
 // hides modal and stores entry data into data model
-$submitEntryButton.addEventListener('submit', function (e) {
+$form.addEventListener('submit', function (e) {
   e.preventDefault();
   $mainScreen.className = 'container';
   $addEntryModal.className = 'hidden-container hidden';
@@ -24,4 +22,15 @@ $submitEntryButton.addEventListener('submit', function (e) {
   // console.log('data time: ', data.entries.time);
   data.entries.task = $form.elements.description.value;
   // console.log(data.entries.task);
+  data.storage.push(data.entries);
+});
+
+var previousDataJson = localStorage.getItem('week-planner');
+if (previousDataJson) {
+  data = JSON.parse(previousDataJson);
+}
+
+window.addEventListener('beforeunload', function (e) {
+  var dataJson = JSON.stringify(data);
+  localStorage.setItem('week-planner', dataJson);
 });

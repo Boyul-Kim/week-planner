@@ -42,5 +42,15 @@
         "asyncArrow": "always"
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "main.js"
+      ],
+      "globals": {
+        "data": "writeable"
+      }
+    }
+  ]
 }
