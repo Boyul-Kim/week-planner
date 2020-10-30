@@ -1,0 +1,22 @@
+.container {
+
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column-full {
+  text-align: center;
+}
+
+.column-eigth {
+
+}
+
+.entry-button {
+  width: 150px;
+  height: 30px;
+
+}
