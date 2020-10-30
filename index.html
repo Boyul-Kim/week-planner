@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Week Planner</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo&family=Overpass:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container hidden">
-    <div class="row">
+    <div class="row justify-content-center">
       <h1>Weekly Planner</h1>
     </div>
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="column-eigth">TBD</div>
     </div>
-    <div class="column-full">
+    <div class="column-full justify-content-center">
       <button class="entry-button">Add Entry</button>
     </div>
     <div class="column-full">TBD</div>
@@ -22,9 +23,9 @@
 
   <div class="hidden-container">
     <div class="modal">
-      <h1>Add Entry</h1>
-      <div class="row">
-        <select name="day-of-week" id="" required>
+      <h1 class="fontChivo add-entry-header">Add Entry</h1>
+      <div class="row margin-bottom">
+        <select name="day-of-week" id="" class="margin-right fontChivo" required>
           <option value="">Day of Week</option>
           <option value="sunday">Sunday</option>
           <option value="monday">Monday</option>
@@ -39,10 +40,10 @@
         </label>
       </div>
       <div class="row">
-        <textarea class="textareaWidth" name="" id="description" cols="30" rows="10"></textarea>
+        <textarea class="textareaWidth margin-bottom fontOverpass" name="" id="description" cols="30" rows="10" placeholder="Description"></textarea>
       </div>
       <div class="row rowFlexEnd">
-        <button>Submit</button>
+        <button class="add-entry-button">Submit</button>
       </div>
     </div>
   </div>

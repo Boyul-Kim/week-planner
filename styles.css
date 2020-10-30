@@ -2,6 +2,15 @@
 
 }
 
+.fontChivo {
+  font-family: 'Chivo', sans-serif;
+}
+
+.fontOverpass {
+  font-family: 'Overpass', sans-serif;
+}
+
+
 .hidden-container {
   position: fixed;
   top: 0;
@@ -21,10 +30,38 @@
   border-radius: 5px;
   padding: 1rem;
 }
+
+.add-entry-header {
+  color: cornflowerblue;
+}
+
+.add-entry-button {
+  background-color: cornflowerblue;
+  padding: .5rem 1rem;
+  border-radius: 15%;
+  border: none;
+  outline: none;
+}
+
+.add-entry-button:hover {
+  background-color: lightblue;
+}
+
 .row {
   display: flex;
-  justify-content: center;
   width: 100%;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.margin-bottom {
+  margin-bottom: 1.5rem;
+}
+
+.margin-right {
+  margin-right: 1.3rem;
 }
 
 .rowFlexEnd {
