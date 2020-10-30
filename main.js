@@ -14,10 +14,14 @@ $entryButton.addEventListener('click', function (e) {
 var $submitEntryButton = document.querySelector('.submit-entry-button');
 
 // hides modal and stores entry data into data model
-$submitEntryButton.addEventListener('click', function (e) {
+$submitEntryButton.addEventListener('submit', function (e) {
+  e.preventDefault();
   $mainScreen.className = 'container';
   $addEntryModal.className = 'hidden-container hidden';
 
   data.entries.day = $form.elements['day-of-week'].value;
-  console.log(data.entries.day);
+  data.entries.time = $form.elements.time.value;
+  // console.log('data time: ', data.entries.time);
+  data.entries.task = $form.elements.description.value;
+  // console.log(data.entries.task);
 });
