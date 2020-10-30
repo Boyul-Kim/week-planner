@@ -35,7 +35,7 @@
   color: cornflowerblue;
 }
 
-.add-entry-button {
+.submit-entry-button {
   background-color: cornflowerblue;
   padding: .5rem 1rem;
   border-radius: 15%;
@@ -43,7 +43,7 @@
   outline: none;
 }
 
-.add-entry-button:hover {
+.submit-entry-button:hover {
   background-color: lightblue;
 }
 
