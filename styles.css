@@ -19,10 +19,16 @@
   margin: auto;
   background-color: white;
   border-radius: 5px;
+  padding: 1rem;
 }
 .row {
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+
+.rowFlexEnd {
+  justify-content: flex-end;
 }
 
 .column-full {
@@ -42,3 +48,6 @@
 .hidden {
   display: none;
 }
+ .textareaWidth {
+   width: 100%;
+ }
