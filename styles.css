@@ -1,8 +1,25 @@
+h2 {
+  width: 100%;
+}
+
+table {
+  width: 90%;
+  margin: auto;
+}
+
+th:first-child {
+  width: 25%;
+}
+
 button.day-buttons {
   background-color: whitesmoke;
   padding: 1rem;
   width:100px;
   margin-bottom: 1rem;
+}
+
+tr:nth-child(odd) {
+  background-color: gray;
 }
 .container {
   max-width: 1400px;
@@ -56,6 +73,7 @@ button.day-buttons {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -92,6 +110,13 @@ button.day-buttons {
   justify-content: space-evenly;
 }
 
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-self-center {
+  justify-self: center;
+}
 .hidden {
   display: none;
 }
