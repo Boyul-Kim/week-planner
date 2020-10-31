@@ -1,5 +1,5 @@
 /* global data */
-
+/*https://github.com/Learning-Fuze/week-planner-instructions */
 var $entryButton = document.querySelector('.entry-button');
 var $mainScreen = document.querySelector('.container');
 var $addEntryModal = document.querySelector('.hidden-container');
