@@ -38,12 +38,50 @@ window.addEventListener('beforeunload', function (e) {
 });
 
 var dayButton = document.querySelectorAll('.day-buttons');
-for(var i = 0; i<=dayButton.length-1; i++) {
-  dayButton[i].addEventListener('click', function(e) {
-    for(var x = 0; x<=data.storage.length-1; x++) {
-      if(dayButton[i].textContent === data.storage[x].day) {
-        var trTask =
+for (var i = 0; i <= dayButton.length - 1; i++) {
+
+  dayButton[i].addEventListener('click', function (e) {
+
+    var $tbody = document.createElement('tbody');
+    var trTask;
+    var td;
+    var td2;
+    for (var x = 0; x <= data.storage.length - 1; x++) {
+      if (dayButton[i].textContent === data.storage[x].day) {
+        trTask = document.createElement('tr');
+        td = document.createElement('td');
+        td2 = document.createElement('td');
       }
     }
-  })
+  });
 }
+
+/*
+          <div class="row">
+            <table>
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>sdfsdaf</td>
+                  <td>sdfsdaf</td>
+                </tr>
+                <tr>
+                  <td>sdfsdaf</td>
+                  <td>sdfsdaf</td>
+                </tr>
+                <tr>
+                  <td>sdfsdaf</td>
+                  <td>sdfsdaf</td>
+                </tr>
+                <tr>
+                  <td>sdfsdaf</td>
+                  <td>sdfsdaf</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> */
