@@ -1,5 +1,12 @@
+button.day-buttons {
+  background-color: whitesmoke;
+  padding: 1rem;
+  width:100px;
+  margin-bottom: 1rem;
+}
 .container {
-
+  max-width: 1400px;
+  margin: auto;
 }
 
 .fontChivo {
@@ -80,6 +87,9 @@
   width: 150px;
   height: 30px;
 
+}
+.justify-content-space-between {
+  justify-content: space-evenly;
 }
 
 .hidden {
