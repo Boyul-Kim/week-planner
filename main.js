@@ -36,3 +36,14 @@ window.addEventListener('beforeunload', function (e) {
   var dataJson = JSON.stringify(data);
   localStorage.setItem('week-planner', dataJson);
 });
+
+var dayButton = document.querySelectorAll('.day-buttons');
+for(var i = 0; i<=dayButton.length-1; i++) {
+  dayButton[i].addEventListener('click', function(e) {
+    for(var x = 0; x<=data.storage.length-1; x++) {
+      if(dayButton[i].textContent === data.storage[x].day) {
+        var trTask =
+      }
+    }
+  })
+}

@@ -7,6 +7,10 @@ table {
   margin: auto;
 }
 
+th {
+  text-align: start;
+}
+
 th:first-child {
   width: 25%;
 }
@@ -93,18 +97,10 @@ tr:nth-child(odd) {
   justify-content: flex-end;
 }
 
-.column-full {
-  text-align: center;
-}
-
-.column-eigth {
-
-}
-
 .entry-button {
   width: 150px;
   height: 30px;
-
+  margin: auto;
 }
 .justify-content-space-between {
   justify-content: space-evenly;
